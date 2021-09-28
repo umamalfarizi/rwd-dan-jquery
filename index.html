@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RWD dan JQuery</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.menu-tab').click(function () {
+          $('.menu-hide').toggleClass('show');
+          $('.menu-tab').toggleClass('active');
+        });
+        $('a').click(function () {
+          $('.menu-hide').removeClass('show');
+          $('.menu-tab').removeClass('active');
+        });
+      });
+    </script>
+    <!-- GPER -->
+  </head>
+  <body>
+    <div id="header" class="wrapper">
+      <div class="container">
+        <div id="logo">
+          <img src="download.jpg" alt="" />
+        </div>
+        <div class="menu-tab">
+          <div id="one"></div>
+          <div id="two"></div>
+          <div id="three"></div>
+        </div>
+        <div class="menu-hide">
+          <nav>
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="container">
+        <div class="sidebar">
+          <div class="recommended-article">
+            <h3>POPULER</h3>
+            <a href="#">Bersepeda di Tengah Pandemi</a> <br />
+            <a href="#">WFH di Masa Pandemi</a>
+          </div>
+        </div>
+        <div class="content">
+          <h3>MUNGKIN ANDA TERTARIK</h3>
+          <div class="blogcontent">
+            <div class="article">
+              <img src="1.jpg" alt="" />
+              <h3>
+                <a href="#">Apa Jadinya Jika Dahulu Sheikh Mansour Beli Liverpool, Bukannya Manchester City?</a>
+              </h3>
+              <p><strong>Bola.net -</strong> Taipan Timur Tengah, Sheikh Mansour rupanya berniat membeli <b>Liverpool</b> lebih dahulu sebelum pada akhirnya memutuskan untuk mengakusisi <b>Manchester City...</b></p>
+              <p><a href="#">Selengkapnya..</a></p>
+              <div class="clear"></div>
+            </div>
+
+            <div class="article">
+              <img src="3.jpg" alt="" />
+              <h3><a href="#">Kronik Pedro Rodrigues: Dibuang Mourinho dari Roma, Permalukan Mourinho di laga derby</a></h3>
+              <p><strong>Bola.net -</strong> Pedro Rodriguez menjadi aktor utama pada laga derby <i>della capitalle</i> antara <b>Lazio</b> vs <b>AS Roma</b> Dibuat Jose Mourinho dari skuad Rmaawal musim ini,...</p>
+              <p><a href="#">Selengkapnya..</a></p>
+              <div class="clear"></div>
+            </div>
+
+            <div class="article">
+              <img src="2.jpg" alt="" />
+              <h3><a href="#">Timo Werner Sebenarnya Pilih Pindah ke MU Kenapa Jadinya ke Chelsea</a></h3>
+              <p><strong>Bola.net - </strong>Sebuah informasi menarik mengenai <b>Timo Werner</b>. Striker timnas Jerman itu diklaim sebenarnya nyaris gabung dengan <b>MU</b> di tahun 2020 kemarin..</p>
+              <p><a href="#">Selengkapnya..</a></p>
+              <div class="clear"></div>
+            </div>
+
+            <div class="article">
+              <img src="4.jpg" alt="" />
+              <h3><a href="#">Kutandai Kau! Mesii dikalim tak Akan Luoakan Perlakuan Pochettino Saar Lawan Lyon</a></h3>
+              <p><strong>Bola.net - </strong>Eks penyerang <b>PSG</b>, <strong>Nicolas Anelka</strong> mengklaim Lionel Messi tak akan lupakan perlakuan Mauricio Pochettino saat menariknya keluar di tengah laga saat lawan <b>Lyon</b></p>
+              <p><a href="#">Selengkapnya..</a></p>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright 2021 by <a href="https://web.facebook.com/idji_dgretonger/">Umam Alfarizi</a> | email: <a href="#">alfariziuchiha@gmail.com</a> | telp: <a href="#">081717582871</a></p>
+    </div>
+  </body>
+</html>
